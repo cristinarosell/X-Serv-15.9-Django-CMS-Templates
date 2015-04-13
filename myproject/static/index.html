@@ -1,0 +1,64 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>Your Page</title>
+	<meta http-equiv="Content-Language" content="English" />
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="author" content="David Herreman (www.free-css-templates.com)" />
+	<meta name="description" content="Free Css Template" />
+	<meta name="keywords" content="free,css,template" />	
+	<meta name="Robots" content="index,follow" />
+	<meta name="Generator" content="sNews 1.5" />
+	<link rel="stylesheet" type="text/css" href="/css/style.css" media="screen" />
+	<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="rss/" />
+</head>
+<body>
+	
+<div class="content">
+	<div id="top">
+				<div id="icons">
+					<a href="" title="Home page"><img src="/css/images/home.gif" alt="Home" /></a>
+					<a href="" title="Contact us"><img src="/css/images/contact.gif" alt="Contact" /></a>
+					<a href="" title="Sitemap"><img src="/css/images/sitemap.gif" alt="Sitemap" /></a>
+				</div>
+				<h1>Página de {{nombre}}</h1>
+	</div>
+	<!-- end of the Top part -->
+</div>			
+
+<div id="prec">
+	<div id="wrap">
+			<div id="pic">
+				<div id="slogan">
+					<h1><font size=6>{{nombre}}</font></h1>
+					<h2>
+					    {% if lista %}
+                           <ul>
+                            {% for i in lista %}
+                            <li>{{i.name}} : {{ i.page }}</li>
+                            {% endfor %}
+                            </ul>
+                        {% endif %}
+                                            
+					</h2>
+				</div>
+			</div>
+			<div id="menu">
+						<ul>	
+							<li><a href="http://127.0.0.1:8000/annotated/" title="home">MOSTRAR PÁGINAS</a></li>
+							<li><a href="logout" title="Articles">LOGOUT</a></li>
+							<li><a href="/admin/login/" title="Gallery">LOGIN</a></li>
+							<li><a href="" title="Affiliates">AFFILIATES</a></li>
+							<li><a href="" title="Articles">ARTICLES</a></li>
+							<li><a href="" title="Abous us">ABOUTS US</a></li>
+							<li><a href="https://github.com/cristinarosell" title="Contact">GITHUB</a></li>
+						
+						</ul>
+			</div>
+	</div>
+</div>
+{{autor}}
+</div>
+
+</body>
+</html>
